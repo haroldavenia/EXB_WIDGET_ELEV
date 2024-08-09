@@ -1,0 +1,160 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page"
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_1",
+          "bbox": {
+            "left": "0.0%",
+            "right": "0.0%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "100.0%",
+            "height": "100.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_1": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_2",
+          "bbox": {
+            "left": "72.4%",
+            "right": "9px",
+            "top": "721px",
+            "bottom": "25px",
+            "width": "344px",
+            "height": "54px"
+          },
+          "setting": {
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "type": "FIXED",
+      "label": "Map FixedLayout",
+      "order": [
+        "0"
+      ]
+    }
+  },
+  "exbVersion": "1.15.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.15.0",
+      "label": "Map",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true
+        },
+        "isUseCustomMapState": false,
+        "initialMapDataSourceID": "dataSource_1",
+        "initialMapState": null
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_1"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ]
+    },
+    "widget_2": {
+      "uri": "widgets/Measure/",
+      "version": "1.15.0",
+      "config": {
+        "exampleConfigProperty": "test"
+      },
+      "id": "widget_2",
+      "useMapWidgetIds": [
+        "widget_1"
+      ],
+      "style": {
+        "background": {
+          "color": "var(--light-100)",
+          "fillType": "fill"
+        }
+      }
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_SCENE",
+      "sourceLabel": "Scene",
+      "itemId": "ff61a6cf4da0439c937fd742376950a8",
+      "portalUrl": "https://hanoitllc.maps.arcgis.com"
+    }
+  },
+  "messageConfigs": {},
+  "attributes": {
+    "portalUrl": "https://hanoitllc.maps.arcgis.com"
+  },
+  "sharedThemeVariables": null,
+  "originExbVersion": "1.15.0",
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ],
+  "timestamp": 1723172572141,
+  "publishTimestamp": 1723172573477
+}
