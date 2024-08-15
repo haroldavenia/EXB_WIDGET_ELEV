@@ -100,7 +100,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
         try {
           // Query ground elevation
           const elevationLayer = new ElevationLayer({
-            url: 'https://tiledbasemaps.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer'
+            url: 'https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer'
           });
 
           const result = await elevationLayer.queryElevation(position);
@@ -110,10 +110,10 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
           const sceneElevation = position.z || 0;
 
           console.log(`Ground Elevation: ${groundElevation}`);
-          console.log(`Scene Elevation: ${sceneElevation - groundElevation}`);
-          console.log(`Total Elevation: ${sceneElevation}`);
+          console.log(`Scene Elevation: ${sceneElevation}`);
+          console.log(`Total Elevation: ${sceneElevation - groundElevation}`);
 
-          textSymbol.symbolLayers[0].text = `Total Elevation: ${sceneElevation.toFixed(2)} m`;
+          textSymbol.symbolLayers[0].text = `Elevation: ${sceneElevation.toFixed(2)} FT`;
 
           view.graphics.removeAll();
           view.graphics.add(new Graphic({
