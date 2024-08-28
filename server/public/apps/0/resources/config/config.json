@@ -9,7 +9,10 @@
       },
       "isDefault": true,
       "isVisible": true,
-      "label": "Page"
+      "label": "Page",
+      "header": true,
+      "footer": false,
+      "bodyBackgroundColor": "rgba(0,0,0,0)"
     }
   },
   "layouts": {
@@ -29,12 +32,10 @@
           },
           "setting": {
             "autoProps": {
+              "left": true,
               "right": false,
-              "left": false,
-              "top": false,
-              "bottom": false,
-              "height": "STRETCH",
-              "width": "STRETCH"
+              "top": true,
+              "bottom": false
             },
             "vCenter": false,
             "hCenter": false
@@ -47,16 +48,16 @@
     },
     "layout_1": {
       "content": {
-        "0": {
+        "1": {
           "type": "WIDGET",
-          "widgetId": "widget_2",
+          "widgetId": "widget_13",
           "bbox": {
-            "left": "72.4%",
-            "right": "9px",
-            "top": "721px",
-            "bottom": "25px",
-            "width": "344px",
-            "height": "54px"
+            "left": "76.8%",
+            "right": "0.0%",
+            "top": "94.1%",
+            "bottom": "1.6%",
+            "width": "23.2%",
+            "height": "4.3%"
           },
           "setting": {
             "autoProps": {
@@ -72,6 +73,167 @@
       },
       "type": "FIXED",
       "label": "Map FixedLayout",
+      "order": [
+        "1"
+      ]
+    },
+    "layout_2": {
+      "content": {
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_4",
+          "bbox": {
+            "left": "17.2%",
+            "right": "76.9%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "5.9%",
+            "height": "100.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_5",
+          "bbox": {
+            "left": "84.4%",
+            "right": "0.0%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "15.6%",
+            "height": "100.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "AUTO",
+              "height": "AUTO",
+              "right": false,
+              "left": true,
+              "top": true,
+              "bottom": false
+            }
+          }
+        },
+        "3": {
+          "type": "WIDGET",
+          "widgetId": "widget_8",
+          "bbox": {
+            "left": "0.0%",
+            "right": "75.2%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "24.8%",
+            "height": "100.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "type": "FIXED",
+      "setting": {
+        "lockDescendants": true
+      },
+      "order": [
+        "3",
+        "1",
+        "2"
+      ]
+    },
+    "layout_3": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_3",
+          "bbox": {
+            "left": "91.6%",
+            "right": "0.0%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "8.4%",
+            "height": "100.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": true,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "type": "FIXED",
+      "setting": {
+        "lockDescendants": true
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_4": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_6",
+          "bbox": {}
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_11",
+          "bbox": {}
+        }
+      },
+      "type": "FIXED",
+      "label": "Controller layout",
+      "order": [
+        "0",
+        "2"
+      ]
+    },
+    "layout_5": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_2",
+          "bbox": {
+            "left": "4.1%",
+            "right": "35.4%",
+            "top": "6.8%",
+            "bottom": "6.7%",
+            "width": "60.5%",
+            "height": "86.5%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            }
+          }
+        }
+      },
+      "type": "FIXED",
+      "label": "Default",
       "order": [
         "0"
       ]
@@ -94,11 +256,53 @@
           "canZoom": true,
           "canHome": true,
           "canSearch": true,
-          "canNavigation": true
+          "canNavigation": true,
+          "canBaseMap": true,
+          "canLayers": true,
+          "canMeasure": true
         },
-        "isUseCustomMapState": false,
-        "initialMapDataSourceID": "dataSource_1",
-        "initialMapState": null
+        "isUseCustomMapState": true,
+        "initialMapDataSourceID": "dataSource_2",
+        "initialMapState": {
+          "viewPoint": {
+            "rotation": 359.99999914622634,
+            "scale": 66161.4528251623,
+            "targetGeometry": {
+              "spatialReference": {
+                "latestWkid": 3857,
+                "wkid": 102100
+              },
+              "x": -9023934.462141734,
+              "y": 3397739.1700406624,
+              "z": 131.87495696730912
+            },
+            "camera": {
+              "position": {
+                "spatialReference": {
+                  "latestWkid": 3857,
+                  "wkid": 102100
+                },
+                "x": -9023934.46234754,
+                "y": 3383935.1176080126,
+                "z": 18027.38788657356
+              },
+              "heading": 8.537736462515939e-7,
+              "tilt": 33.95866356578241
+            }
+          },
+          "extent": {
+            "spatialReference": {
+              "latestWkid": 3857,
+              "wkid": 102100
+            },
+            "xmin": -9035220.52616303,
+            "ymin": 3391457.6220972007,
+            "xmax": -9012648.398531742,
+            "ymax": 3404224.9813240003
+          },
+          "rotation": 359.99999914622634,
+          "viewType": "3d"
+        }
       },
       "id": "widget_1",
       "layouts": {
@@ -108,27 +312,418 @@
       },
       "useDataSources": [
         {
-          "dataSourceId": "dataSource_1",
-          "mainDataSourceId": "dataSource_1"
+          "dataSourceId": "dataSource_2",
+          "mainDataSourceId": "dataSource_2"
         }
       ]
     },
     "widget_2": {
+      "uri": "widgets/common/image/",
+      "version": "1.15.0",
+      "label": "Image",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {
+            "url": "https://www.flydaytonafirst.com/resources/DABLogo-blue-r-db.png",
+            "originalUrl": "https://www.flydaytonafirst.com/resources/DABLogo-blue-r-db.png",
+            "fileName": "DABLogo-blue-r-db.png",
+            "originalName": "DABLogo-blue-r-db.png",
+            "imgSourceType": "BY_URL"
+          },
+          "imageDisplayQualityMode": "ORIGINAL",
+          "imgSourceType": "",
+          "srcExpression": null,
+          "imageFillMode": "FIT"
+        },
+        "styleConfig": {}
+      },
+      "id": "widget_2",
+      "style": {
+        "background": {
+          "color": null,
+          "fillType": "fill"
+        }
+      }
+    },
+    "widget_3": {
+      "uri": "widgets/common/image/",
+      "version": "1.15.0",
+      "label": "Image 2",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {
+            "url": "https://aidinc.us/wp-content/uploads/2022/10/aid_logo_Transparent-Background.png",
+            "originalUrl": "https://aidinc.us/wp-content/uploads/2022/10/aid_logo_Transparent-Background.png",
+            "fileName": "aid_logo_Transparent-Background.png",
+            "originalName": "aid_logo_Transparent-Background.png",
+            "imgSourceType": "BY_URL"
+          },
+          "imageDisplayQualityMode": "ORIGINAL",
+          "imgSourceType": "",
+          "srcExpression": null,
+          "imageFillMode": "FIT"
+        },
+        "styleConfig": {}
+      },
+      "id": "widget_3"
+    },
+    "widget_4": {
+      "uri": "widgets/common/image/",
+      "version": "1.15.0",
+      "label": "Image 3",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {
+            "url": "https://aidinc.us/wp-content/uploads/2022/10/aid_logo_Transparent-Background.png",
+            "originalUrl": "https://aidinc.us/wp-content/uploads/2022/10/aid_logo_Transparent-Background.png",
+            "fileName": "aid_logo_Transparent-Background.png",
+            "originalName": "aid_logo_Transparent-Background.png",
+            "imgSourceType": "BY_URL"
+          },
+          "imageDisplayQualityMode": "ORIGINAL",
+          "imgSourceType": "",
+          "srcExpression": null,
+          "imageFillMode": "FIT"
+        },
+        "styleConfig": {}
+      },
+      "id": "widget_4"
+    },
+    "widget_5": {
+      "uri": "widgets/common/controller/",
+      "version": "1.15.0",
+      "label": "Widget Controller",
+      "config": {
+        "behavior": {
+          "onlyOpenOne": true,
+          "openStarts": [],
+          "displayType": "STACK",
+          "vertical": false,
+          "size": {
+            "widget_6": {
+              "width": 300,
+              "height": 337
+            },
+            "widget_11": {
+              "width": 300,
+              "height": 120
+            }
+          }
+        },
+        "appearance": {
+          "space": 0,
+          "advanced": false,
+          "card": {
+            "showLabel": false,
+            "labelGrowth": 10,
+            "avatar": {
+              "type": "primary",
+              "size": "default",
+              "shape": "circle"
+            }
+          }
+        }
+      },
+      "id": "widget_5",
+      "layouts": {
+        "controller": {
+          "LARGE": "layout_4"
+        }
+      },
+      "style": {
+        "background": {
+          "color": null,
+          "fillType": "fill"
+        }
+      }
+    },
+    "widget_6": {
+      "uri": "widgets/common/filter/",
+      "version": "1.15.0",
+      "label": "Filter",
+      "config": {
+        "groupByLayer": false,
+        "logicalOperator": "AND",
+        "custom": false,
+        "resetAll": false,
+        "turnOffAll": false,
+        "arrangeType": "BLOCK",
+        "triggerType": "TOGGLE",
+        "omitInternalStyle": true,
+        "filterItems": [
+          {
+            "isGroup": false,
+            "icon": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M15 1.53V0H1v1.53h.07l5.374 5.288v6.121l2.26 2.224a.5.5 0 0 0 .852-.356V6.825l5.382-5.295zM2 1h12v.049L8.556 6.406l-.001 7.207-1.111-1.093V6.399L2 1.042z\" clip-rule=\"evenodd\"></path></svg>",
+              "properties": {
+                "color": "",
+                "filename": "Filter",
+                "originalName": "filter.svg",
+                "inlineSvg": true,
+                "size": 14
+              }
+            },
+            "name": "Parcels",
+            "useDataSources": [
+              {
+                "dataSourceId": "dataSource_2-19196f975eb-layer-90",
+                "mainDataSourceId": "dataSource_2-19196f975eb-layer-90",
+                "rootDataSourceId": "dataSource_2",
+                "fields": [
+                  "RefName"
+                ]
+              }
+            ],
+            "autoApplyWhenWidgetOpen": true,
+            "collapseFilterExprs": false,
+            "sqlExprObj": {
+              "logicalOperator": "AND",
+              "parts": [
+                {
+                  "type": "SINGLE",
+                  "jimuFieldName": "RefName",
+                  "operator": "STRING_OPERATOR_IS_ANY_OF",
+                  "valueOptions": {
+                    "isValid": true,
+                    "sourceType": "MULTIPLE",
+                    "inputEditor": "MULTIPLE_SELECT",
+                    "value": null
+                  },
+                  "displayType": "USE_ASK_FOR_VALUE",
+                  "askForValueOptions": {
+                    "label": "Parcel #",
+                    "display": "BLOCK",
+                    "hint": "",
+                    "cascade": "NONE"
+                  },
+                  "displayLabel": null,
+                  "caseSensitive": false
+                }
+              ],
+              "sql": "",
+              "displaySQL": "(RefName is any of (?))"
+            }
+          },
+          {
+            "isGroup": false,
+            "icon": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M15 1.53V0H1v1.53h.07l5.374 5.288v6.121l2.26 2.224a.5.5 0 0 0 .852-.356V6.825l5.382-5.295zM2 1h12v.049L8.556 6.406l-.001 7.207-1.111-1.093V6.399L2 1.042z\" clip-rule=\"evenodd\"></path></svg>",
+              "properties": {
+                "color": "",
+                "filename": "Filter",
+                "originalName": "filter.svg",
+                "inlineSvg": true,
+                "size": 14
+              }
+            },
+            "name": "Approaching",
+            "useDataSources": [
+              {
+                "dataSourceId": "dataSource_2-cfcff23112c14bba91d3d84290cc592e",
+                "mainDataSourceId": "dataSource_2-cfcff23112c14bba91d3d84290cc592e",
+                "rootDataSourceId": "dataSource_2",
+                "fields": [
+                  "Value"
+                ]
+              }
+            ],
+            "autoApplyWhenWidgetOpen": true,
+            "collapseFilterExprs": false,
+            "sqlExprObj": {
+              "logicalOperator": "AND",
+              "parts": [
+                {
+                  "type": "SINGLE",
+                  "jimuFieldName": "Value",
+                  "operator": "STRING_OPERATOR_IS_ANY_OF",
+                  "valueOptions": {
+                    "isValid": true,
+                    "sourceType": "MULTIPLE",
+                    "inputEditor": "MULTIPLE_SELECT",
+                    "value": null
+                  },
+                  "displayType": "USE_ASK_FOR_VALUE",
+                  "askForValueOptions": {
+                    "label": "Approaching",
+                    "display": "BLOCK",
+                    "hint": "",
+                    "cascade": "NONE"
+                  },
+                  "displayLabel": null,
+                  "caseSensitive": false
+                }
+              ],
+              "sql": "",
+              "displaySQL": "(Value is any of (?))"
+            }
+          },
+          {
+            "isGroup": false,
+            "icon": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M15 1.53V0H1v1.53h.07l5.374 5.288v6.121l2.26 2.224a.5.5 0 0 0 .852-.356V6.825l5.382-5.295zM2 1h12v.049L8.556 6.406l-.001 7.207-1.111-1.093V6.399L2 1.042z\" clip-rule=\"evenodd\"></path></svg>",
+              "properties": {
+                "color": "",
+                "filename": "Filter",
+                "originalName": "filter.svg",
+                "inlineSvg": true,
+                "size": 14
+              }
+            },
+            "name": "Zones",
+            "useDataSources": [
+              {
+                "dataSourceId": "dataSource_2-19196f975ed-layer-92",
+                "mainDataSourceId": "dataSource_2-19196f975ed-layer-92",
+                "rootDataSourceId": "dataSource_2",
+                "fields": [
+                  "Layer"
+                ]
+              }
+            ],
+            "autoApplyWhenWidgetOpen": true,
+            "collapseFilterExprs": false,
+            "sqlExprObj": {
+              "logicalOperator": "AND",
+              "parts": [
+                {
+                  "type": "SINGLE",
+                  "jimuFieldName": "Layer",
+                  "operator": "STRING_OPERATOR_IS_ANY_OF",
+                  "valueOptions": {
+                    "isValid": true,
+                    "sourceType": "MULTIPLE",
+                    "inputEditor": "MULTIPLE_SELECT",
+                    "value": null
+                  },
+                  "displayType": "USE_ASK_FOR_VALUE",
+                  "askForValueOptions": {
+                    "label": "Zones",
+                    "display": "BLOCK",
+                    "hint": "",
+                    "cascade": "NONE"
+                  },
+                  "displayLabel": null,
+                  "caseSensitive": false
+                }
+              ],
+              "sql": "",
+              "displaySQL": "(Layer is any of (?))"
+            }
+          }
+        ]
+      },
+      "id": "widget_6",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2-19196f975eb-layer-90",
+          "mainDataSourceId": "dataSource_2-19196f975eb-layer-90",
+          "rootDataSourceId": "dataSource_2",
+          "fields": [
+            "RefName"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_2-cfcff23112c14bba91d3d84290cc592e",
+          "mainDataSourceId": "dataSource_2-cfcff23112c14bba91d3d84290cc592e",
+          "rootDataSourceId": "dataSource_2",
+          "fields": [
+            "Value"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_2-19196f975ed-layer-92",
+          "mainDataSourceId": "dataSource_2-19196f975ed-layer-92",
+          "rootDataSourceId": "dataSource_2",
+          "fields": [
+            "Layer"
+          ]
+        }
+      ]
+    },
+    "widget_8": {
+      "uri": "widgets/layout/fixed/",
+      "version": "1.15.0",
+      "label": "Fixed Panel",
+      "config": null,
+      "id": "widget_8",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_5"
+        }
+      },
+      "style": {
+        "background": {
+          "color": "#ffffff",
+          "fillType": "fill",
+          "image": {
+            "url": ""
+          }
+        }
+      }
+    },
+    "widget_11": {
       "uri": "widgets/Measure/",
       "version": "1.15.0",
       "config": {
         "exampleConfigProperty": "test"
       },
-      "id": "widget_2",
+      "id": "widget_11",
       "useMapWidgetIds": [
         "widget_1"
-      ],
-      "style": {
-        "background": {
-          "color": "var(--light-100)",
-          "fillType": "fill"
+      ]
+    },
+    "widget_13": {
+      "uri": "widgets/coordinates_xy/",
+      "version": "1.15.0",
+      "label": "Coordinates XY",
+      "config": {
+        "coordinateSystem": [
+          {
+            "id": "system-1",
+            "name": "WGS_1984_Web_Mercator_Auxiliary_Sphere",
+            "wkid": "3857",
+            "displayUnit": "DEGREE_MINUTE_SECONDS",
+            "elevationUnit": "METRIC",
+            "crs": {
+              "name": "WGS_1984_Web_Mercator_Auxiliary_Sphere",
+              "wkid": 3857,
+              "wkt": "PROJCS['WGS_1984_Web_Mercator_Auxiliary_Sphere',GEOGCS['GCS_WGS_1984',DATUM['D_WGS_1984',SPHEROID['WGS_1984',6378137.0,298.257223563]],PRIMEM['Greenwich',0.0],UNIT['Degree',0.0174532925199433]],PROJECTION['Mercator_Auxiliary_Sphere'],PARAMETER['False_Easting',0.0],PARAMETER['False_Northing',0.0],PARAMETER['Central_Meridian',0.0],PARAMETER['Standard_Parallel_1',0.0],PARAMETER['Auxiliary_Sphere_Type',0.0],UNIT['Meter',1.0]]"
+            }
+          }
+        ],
+        "coordinateDecimal": 3,
+        "altitudeDecimal": 2,
+        "showSeparators": true,
+        "showElevation": false,
+        "displayOrder": "XY",
+        "widgetStyle": "CLASSIC",
+        "mapInfo": {
+          "id": "5256be1848b94f48b90bcd3115c86791",
+          "title": "Scene2",
+          "wkid": 102100,
+          "label": "WGS_1984_Web_Mercator_Auxiliary_Sphere",
+          "csUnit": "Meter"
+        },
+        "mapInfo2": {
+          "csUnit": ""
         }
-      }
+      },
+      "id": "widget_13",
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
     }
   },
   "widgetsManifest": {},
@@ -136,11 +731,11 @@
   "sections": {},
   "dialogs": {},
   "dataSources": {
-    "dataSource_1": {
-      "id": "dataSource_1",
+    "dataSource_2": {
+      "id": "dataSource_2",
       "type": "WEB_SCENE",
-      "sourceLabel": "Scene",
-      "itemId": "ff61a6cf4da0439c937fd742376950a8",
+      "sourceLabel": "Scene2",
+      "itemId": "5256be1848b94f48b90bcd3115c86791",
       "portalUrl": "https://hanoitllc.maps.arcgis.com"
     }
   },
@@ -155,5 +750,37 @@
       "page_0": []
     }
   ],
-  "timestamp": 1723172572141
+  "timestamp": 1724870370534,
+  "header": {
+    "layout": {
+      "LARGE": "layout_2"
+    },
+    "height": {
+      "LARGE": "52px"
+    },
+    "backgroundColor": "var(--info-800)"
+  },
+  "analytics": {
+    "enable": false
+  },
+  "urlParams": {
+    "widgets": {
+      "widget_1": {
+        "isEnable": false
+      }
+    }
+  },
+  "customTheme": {
+    "colors": {
+      "primary": "#003b56"
+    }
+  },
+  "footer": {
+    "layout": {
+      "LARGE": "layout_3"
+    },
+    "height": {
+      "LARGE": 75
+    }
+  }
 }

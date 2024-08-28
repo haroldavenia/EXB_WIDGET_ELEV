@@ -1,0 +1,158 @@
+{
+  "nodes": [
+    {
+      "name": "widgets/coordinates_xy/dist/runtime/widget",
+      "size": 135306
+    },
+    {
+      "name": "widgets/coordinates_xy/dist/setting/setting",
+      "size": 51457
+    },
+    {
+      "name": "widgets/Measure/dist/runtime/widget",
+      "size": 8717
+    },
+    {
+      "name": "widgets/Measure/dist/setting/setting",
+      "size": 2071
+    },
+    {
+      "name": "widgets/simple/dist/runtime/widget",
+      "size": 1507
+    }
+  ],
+  "links": [
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "esri/Graphic"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "esri/core/reactiveUtils"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "esri/geometry/Point"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "esri/geometry/SpatialReference"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "esri/geometry/coordinateFormatter"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "esri/geometry/projection"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "esri/geometry/support/webMercatorUtils"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "esri/layers/GraphicsLayer"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "esri/rest/geometryService"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "esri/rest/support/ProjectParameters"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "esri/symbols/PictureMarkerSymbol"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "jimu-arcgis/index"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "jimu-core/index"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "jimu-layouts/layout-runtime"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "jimu-ui/index"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/runtime/widget",
+      "target": "jimu-ui/basic/copy-button"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/setting/setting",
+      "target": "jimu-arcgis/index"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/setting/setting",
+      "target": "jimu-core/index"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/setting/setting",
+      "target": "jimu-core/react"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/setting/setting",
+      "target": "jimu-for-builder/index"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/setting/setting",
+      "target": "jimu-ui/index"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/setting/setting",
+      "target": "jimu-ui/advanced/setting-components"
+    },
+    {
+      "source": "widgets/coordinates_xy/dist/setting/setting",
+      "target": "jimu-ui/basic/list-tree"
+    },
+    {
+      "source": "widgets/Measure/dist/runtime/widget",
+      "target": "esri/Graphic"
+    },
+    {
+      "source": "widgets/Measure/dist/runtime/widget",
+      "target": "esri/geometry"
+    },
+    {
+      "source": "widgets/Measure/dist/runtime/widget",
+      "target": "esri/layers/ElevationLayer"
+    },
+    {
+      "source": "widgets/Measure/dist/runtime/widget",
+      "target": "jimu-arcgis/index"
+    },
+    {
+      "source": "widgets/Measure/dist/runtime/widget",
+      "target": "jimu-core/index"
+    },
+    {
+      "source": "widgets/Measure/dist/runtime/widget",
+      "target": "jimu-core/react"
+    },
+    {
+      "source": "widgets/Measure/dist/runtime/widget",
+      "target": "jimu-ui/index"
+    },
+    {
+      "source": "widgets/Measure/dist/setting/setting",
+      "target": "jimu-core/index"
+    },
+    {
+      "source": "widgets/Measure/dist/setting/setting",
+      "target": "jimu-ui/advanced/setting-components"
+    },
+    {
+      "source": "widgets/simple/dist/runtime/widget",
+      "target": "jimu-core/index"
+    }
+  ]
+}

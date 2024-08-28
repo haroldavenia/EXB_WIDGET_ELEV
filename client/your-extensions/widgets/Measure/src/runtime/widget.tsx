@@ -18,7 +18,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
   const handleClick = useRef<__esri.Handle>();
 
   useEffect(() => {
-    if(!props.useMapWidgetIds.length || !jimuMapView || jimuMapView?.view?.type == "2d") {
+    if(!props.useMapWidgetIds?.length || !jimuMapView || jimuMapView?.view?.type == "2d") {
       setErrorViewType(true);
 
       // Configuration EXB mode control
@@ -113,7 +113,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
           console.log(`Scene Elevation: ${sceneElevation}`);
           console.log(`Total Elevation: ${sceneElevation - groundElevation}`);
 
-          textSymbol.symbolLayers[0].text = `Elevation: ${sceneElevation.toFixed(2)} FT`;
+          textSymbol.symbolLayers[0].text = `Layer Elevation: ${sceneElevation.toFixed(2)} FT - Ground Elevation: ${groundElevation.toFixed(2)}`;
 
           view.graphics.removeAll();
           view.graphics.add(new Graphic({
@@ -156,7 +156,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
         :
         <Fragment>
           <div style={{ borderBottom: "1px solid gray", marginBottom: "10px", paddingBottom: "10px" }}>
-            Click on the map to see the total elevation.
+            Right click on the map to see the total elevation.
           </div>
         </Fragment>
       }

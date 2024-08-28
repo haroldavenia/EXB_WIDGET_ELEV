@@ -2,13 +2,13 @@
   "created": 1723170820179,
   "description": "",
   "id": "0",
-  "modified": 1723172573479,
+  "modified": 1724870371782,
   "owner": "Hanoit_Trial",
   "tags": [],
-  "thumbnail": null,
-  "title": "Elevation meaure",
+  "thumbnail": "thumbnail/thumbnail1724817909206.png",
+  "title": "Elevation measure",
   "type": "Web Experience",
-  "snippet": "",
+  "snippet": "DAI",
   "typeKeywords": [
     "EXB Experience",
     "Ready To Use",
@@ -19,7 +19,10 @@
   ],
   "portalUrl": "https://hanoitllc.maps.arcgis.com",
   "username": "Hanoit_Trial",
-  "name": "Elevation meaure",
+  "name": "Elevation measure",
   "isLocalApp": true,
-  "url": null
+  "url": null,
+  "clearEmptyFields": false,
+  "f": "json",
+  "token": "undefined"
 }
