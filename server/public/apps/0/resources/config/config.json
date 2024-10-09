@@ -418,7 +418,7 @@
             },
             "widget_11": {
               "width": 300,
-              "height": 120
+              "height": 230
             }
           }
         },
@@ -734,7 +734,7 @@
     "dataSource_2": {
       "id": "dataSource_2",
       "type": "WEB_SCENE",
-      "sourceLabel": "Scene2",
+      "sourceLabel": "Scene_DAI",
       "itemId": "5256be1848b94f48b90bcd3115c86791",
       "portalUrl": "https://hanoitllc.maps.arcgis.com"
     }
@@ -750,7 +750,7 @@
       "page_0": []
     }
   ],
-  "timestamp": 1724870370534,
+  "timestamp": 1728445659509,
   "header": {
     "layout": {
       "LARGE": "layout_2"
